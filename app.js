@@ -44,7 +44,7 @@ const server = app.listen(3000, () => {
 
 const io = new Server(server, {
   cors: {
-    origin: "http://192.168.0.112", // Replace with your client's URL
+    origin: "*", // Replace with your client's URL
     methods: ["GET", "POST"],
   },
 });
